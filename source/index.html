@@ -1,83 +1,143 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.min.css">
-</head>
-<body>
-    <main>
-        <h1 class="visually-hidden">Java-script</h1>
-        <section class="books">
-            <div>
-                <h2>Путь JavaScript</h2>
-                <img src="img/content/Object.jpg" alt="Изображение с книгами">
-                <p>Можно выделить три основных направления для прогресса JavaScript </p>
-            </div>
-            <div>
-                <h3><b>Серверный </b>JavaScript</h3>
-                <p>Разработчики и клиенты часто неправильно понимают, что такое система. 
-                    Они видят графический интерфейс и думают, что он и есть система. 
-                    Они определяют систему в терминах графического интерфейса и считают, 
-                    что должны сразу начать работу с графическим интерфейсом. 
-                    Они не понимают важнейшего принципа: ввод/вывод не важен.
-                </p>
-                <small>— Р. Мартин</small>
-            </div>
-            <aside>
 
-            </aside>
-            <div>
-                <h3>Заключение</h3>
-                <p>
-                    Синхрония осознаёт сюжетный верлибр. 
-                    Мифопорождающее текстовое устройство диссонирует лирический субъект. 
-                    Абстрактное высказывание пространственно просветляет деструктивный символ. 
-                    Ямб, несмотря на то, что все эти характерологические черты отсылают 
-                    не к единому образу нарратора, интегрирует мифопоэтический хронотоп. 
-                    Действительно, ударение приводит палимпсест. Контрапункт приводит ритм.
-                </p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Inconsolata:wght@400;700&family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <h1 class="visually-hidden">Java-script</h1>
+    <section class="books">
+      <div>
+        <h2 class="books__title">Путь JavaScript</h2>
+        <figure class="books__figure" scrolling="yes">
+          <figcaption class="books__sign">
+            Можно выделить три основных направления для прогресса JavaScript
+          </figcaption>
+          <div class="books__scrolling">
+            <img src="img/content/Object.jpg" alt="Изображение с книгами" class="books__img">
+          </div> 
+        </figure>
+      </div>
+      <div class="container">
+        <h3 class="books__subtitle">Серверный <span>JavaScript</span></h3>
+        <blockquote class="books__quote quote">
+          <p class="quote__text">
+            Разработчики и клиенты часто неправильно понимают, что такое система.
+            Они видят графический интерфейс и думают, что он и есть система.
+            Они определяют систему в терминах графического интерфейса и считают,
+            что должны сразу начать работу с графическим интерфейсом.
+            Они не понимают важнейшего принципа: ввод/вывод не важен.
+          </p>
+          <cite class="quote__autor">— Р. Мартин</cite>
+        </blockquote>  
+      </div>
+      <aside class="adv">
+        <div class="container">
+          <h2 class="adv__title">Реклама на <a href="#">blabla.com</a></h2>
+          <img src="img/content/Photo.jpg" alt="Рекламный баннер" class="adv__img">
+        </div>
+      </aside>
+      <div class="books__conclusion conclusion container">
+        <h3 class="conclusion__title">Заключение</h3>
+        <p class="conclusion__text">
+          Синхрония осознаёт сюжетный верлибр.
+          Мифопорождающее текстовое устройство диссонирует лирический субъект.
+          Абстрактное высказывание пространственно просветляет деструктивный символ.
+          Ямб, несмотря на то, что все эти характерологические черты отсылают
+          не к единому образу нарратора, интегрирует мифопоэтический хронотоп.
+          Действительно, ударение приводит палимпсест. Контрапункт приводит ритм.
+        </p>
+      </div>
+    </section>
+    <section class="review">
+      <div class="container">
+        <h2 class="visually-hidden">Оставьте отзыв</h2>
+        <div class="review__rating ratind">
+          <p class="rating__text">Оцените статью</p>
+          <div class="rating__area">
+            <input type="radio" id="star-5" name="rating" value="5" class="visually-hidden">
+            <label for="star-5" title="Оценка «5»"></label>	
+            <input type="radio" id="star-4" name="rating" value="4" class="visually-hidden">
+            <label for="star-4" title="Оценка «4»"></label>    
+            <input type="radio" id="star-3" name="rating" value="3" class="visually-hidden">
+            <label for="star-3" title="Оценка «3»"></label>  
+            <input type="radio" id="star-2" name="rating" value="2" class="visually-hidden">
+            <label for="star-2" title="Оценка «2»"></label>    
+            <input type="radio" id="star-1" name="rating" value="1" class="visually-hidden">
+            <label for="star-1" title="Оценка «1»"></label>
+          </div>
+        </div>
+        <div>
+          <p class="review__add-comment">Добавить комментарий к книге</p>
+          <form class="review__form form" method="POST">
+            <div class="form__input-wrapper">
+              <input class="form__user-name" type="text" name="name" id="name" required>
+              <label for="name">Имя</label>
             </div>
-        </section>
-        <section class="оценка">
-            <h2 class="visually-hidden">Оценка</h2>
-            <div>
-                <p>Оцените статью</p>
-                <div class="stars"></div>
+            <div class="form__input-wrapper">
+              <input class="form__user-email" type="text" name="email" id="email" required>
+              <label for="email">E-mail</label>
             </div>
-            <div>
-                <p>Добавить комментарий к книге</p>
-                <form method="POST">
-                    <input type="text" name="name" id="name" placeholder="Имя">
-                    <input type="email" name="email" id="email">
-                    <select name="books" id="books" placeholder="Выберите книгу">
-                        <option value="" disabled selected hidden>Выберите книгу</option>
-                        <option value="1">JavaScript ниндзя</option>
-                        <option value="2">Pragmatic Guide to JavaScript</option>
-                        <option value="3">Pro JavaScript Techniques</option>
-                        <option value="4">Выразительный JavaScript</option>
-                    </select>
-                    <textarea placeholder="Ваш отзыв"></textarea>
-                    <button type="submit">Отправить</button>
-                </form>
+            <div class="form__custom-select" tabindex="0">
+              <select class="form__books-select" name="books" id="books" placeholder="Выберите книгу">
+                <option class="qwe" value="0" disabled selected hidden>Выберите книгу</option>
+                <option value="1">JavaScript ниндзя</option>
+                <option value="2">Pragmatic Guide to JavaScript</option>
+                <option value="3">Pro JavaScript Techniques</option>
+                <option value="4">Выразительный JavaScript</option>
+              </select>
             </div>
-        </section>
-        <section>
-            <h2>Похожие посты</h2>
-            <figure>
-                <img src="img/content/Снимок экрана 2020-04-15 в 13.01.46.png">
-                <figcaption>События жизненного цикла ReactJS</figcaption>
+            <div class="form__input-wrapper">
+              <textarea id="textarea-comment" class="form__textarea" required></textarea>
+              <label for="textarea-comment">Ваш отзыв</label>
+            </div>
+            <button class="form__btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="similar-posts">
+      <div class="container">
+        <h2 class="similar-posts__title">Похожие посты</h2>
+        <div class="similar-posts__slider slider">
+          <input class="visually-hidden slider__input1" type="radio" name="point" id="slide1" checked>
+          <label for="slide1"></label>
+          <input class="visually-hidden slider__input2" type="radio" name="point" id="slide2">
+          <label for="slide2"></label>
+          <input class="visually-hidden slider__input3" type="radio" name="point" id="slide3">
+          <label for="slide3"></label>
+          <div  class="slider__slides">
+            <figure class="slider__slide slider__slide-slide1">
+              <img src="img/content/1m.png" class="slider__img1">
+              <figcaption class="slider__sign">События жизненного цикла ReactJS</figcaption>
             </figure>
-            <figure>
-                <img src="img/content/Снимок экрана 2020-04-15 в 13.02.10.png">
-                <figcaption>CSS Grids. Полное руководство</figcaption>
+            <figure  class="slider__slide slider__slide-slide2">
+              <img src="img/content/Снимок экрана 2020-04-15 в 13.02.10.png" width="280px">
+              <figcaption class="slider__sign">CSS Grids. Полное руководство</figcaption>
             </figure>
-            <figure>
-                <img src="img/content/Снимок экрана 2020-04-15 в 13.02.31.png">
-                <figcaption>Асинхронность в JavaScript </figcaption>
+            <figure  class="slider__slide slider__slide-slide3">
+              <img src="img/content/Снимок экрана 2020-04-15 в 13.02.31.png"  width="280px">
+              <figcaption class="slider__sign">Асинхронность в JavaScript </figcaption>
             </figure>
-        </section>
-    </main>
+          </div>
+          <!-- <div class="slider__controls">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+          </div> -->
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/script.min.js"></script>
 </body>
+
+
 </html>

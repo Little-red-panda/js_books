@@ -1,0 +1,10 @@
+.review {
+  background-color: $grey-bg;
+}
+
+.review__add-comment {
+  @include indents();
+  @include font(16px, 18px, 700);
+  font-family: 'Consolas', 'Inconsolata', monospace;
+  margin-bottom: 20px;
+}

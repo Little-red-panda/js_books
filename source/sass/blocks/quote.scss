@@ -1,0 +1,14 @@
+.quote__text {
+  @include font(14px, 26px, 400);
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-style: italic;
+  color: #1A1A1A;
+  margin-bottom: 20px;
+}
+
+.quote__autor {
+  @include font(14px, 26px, 400);
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-style: italic;
+  color: #656565;
+}

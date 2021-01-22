@@ -1,0 +1,98 @@
+.books__title {
+  @include indents();
+  @include font(23px, 25px, 700);
+  font-family: 'Consolas', 'Inconsolata', monospace;
+  color: #0062FF;
+  text-align: center;
+
+  position: relative;
+
+  max-width: 280px;
+  padding: 0 20px;
+  margin: 40px auto;
+
+  &::before {
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 2px;
+      background-color:  #DCDCDC;
+      left: 20px;
+      bottom: 6px;
+  }
+
+  &::after {
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 2px;
+      background-color:  #DCDCDC;
+      right: 20px;
+      bottom: 6px;
+  }
+}
+
+.books__figure {
+  @include indents();
+  padding-left: 20px;
+  margin: 0 auto 50px;
+}
+
+.books__sign {
+  @include indents();
+  @include font(14px, 18px, 400);
+  font-style: italic;
+  color: #202326;
+  max-width: 280px;
+  padding-right: 20px;
+  margin: 0 auto 25px;
+}
+
+.books__scrolling {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 320px;
+}
+
+.books__scrolling::-webkit-scrollbar {
+  height: 4px;
+  margin: 0 auto;
+}
+
+.books__scrolling::-webkit-scrollbar-thumb,
+.books__scrolling::-webkit-scrollbar-track {
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.books__scrolling::-webkit-scrollbar-thumb {
+  background-color: #0062FF;
+}
+
+.books__scrolling::-webkit-scrollbar-track {
+  background-color: #E6E6E6;
+  margin-right: 1.2em;
+}
+
+.books__subtitle {
+  @include indents();
+  @include font(23px, 36px, 700);
+  font-family: 'Consolas', 'Inconsolata', monospace;
+}
+
+.books__subtitle span {
+  font-weight: 400;
+}
+
+.books__quote {
+  @include indents();
+  padding-left: 45px;
+  background: url("../img/icon/quote.svg") no-repeat;
+  margin-bottom: 50px;
+}
+
+.books__conclusion {
+  margin-bottom: 75px;
+}

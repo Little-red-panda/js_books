@@ -1,0 +1,11 @@
+.conclusion__title {
+  @include indents();
+  @include font(23px, 36px, 700);
+  font-family: 'Consolas', 'Inconsolata', monospace;
+  margin-bottom: 21px;
+}
+
+.conclusion__text {
+  @include indents();
+  @include font(14px, 25px, 400);
+}

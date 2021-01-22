@@ -1,0 +1,162 @@
+.form {
+  padding-bottom: 30px;
+}
+
+.form__input-wrapper {
+  position: relative;
+}
+
+.form__user-name,
+.form__user-email,
+.form__books-select,
+.form__textarea {
+  box-sizing: border-box;
+  @include indents();
+  @include font(14px, 50px, 400);
+  font-family: 'Arial', sans-serif;
+  border: none;
+  width: 100%;
+  height: 50px;
+}
+
+.form__user-name,
+.form__user-email {
+  padding-top: 15px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+
+input:focus {
+  outline-color: #7F7F7F;
+}
+
+.form__input-wrapper label {
+  @include font(14px, 50px, 400);
+  font-family: 'Arial', sans-serif;
+  color: #777;
+  position: absolute;
+  left: 15px;
+  transition: ease-in-out .3s;
+}
+
+.form__user-name:focus + label,
+.form__user-name:valid + label,
+.form__user-email:focus + label,
+.form__user-email:valid + label,
+.form__textarea:focus + label,
+.form__textarea:valid + label {
+  transform: translateY(-11px);
+}
+
+.form__custom-select {
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'Arial', sans-serif;
+  padding-top: 5px;
+  margin-bottom: 20px;
+  height: 50px;
+  background-color: #fff;
+  &:focus {
+    outline-color: #7F7F7F;
+  }
+}
+
+.form__custom-select select {
+  display: none;
+}
+
+.form__select-selected {
+  @include font(14px, 40px, 400);
+  font-family: 'Arial', sans-serif;
+  color: #777;
+  background-color: #fff;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+.form__select-selected:after {
+  position: absolute;
+  content: "";
+  top: 0px;
+  right: 0px;
+  width: 60px;
+  height: 50px;
+  background: url("../img/icon/arrow.svg") no-repeat center center;
+}
+
+.form__select-items div{
+  @include font(14px, 40px, 400);
+  font-family: 'Arial', sans-serif;
+  color: #000;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+.form__select-selected.select-active {
+  color: #000;
+}
+
+.form__select-items {
+  position: absolute;
+  background-color: #fff;
+  color: #000;
+  top: 60px;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  box-shadow: 0 0 10px 0px #cecece;
+}
+
+.form__select-hide {
+  display: none;
+}
+
+.form__select-items div:hover, .form__same-as-selected {
+  background-color: #EDEDED;
+}
+
+.form__textarea {
+  display: block;
+  height: 150px;
+  resize: none;
+  padding-top: 5px;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  &:focus {
+    outline-color: #7F7F7F;
+  }
+}
+
+.form__textarea + label {
+  top: -3px;
+}
+
+.form__btn {
+  @include indents();
+  @include font(14px, 50px, 700);
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+  width: 280px;
+  height: 50px;
+  background: #0062FF;
+  border-radius: 2px;
+  border: none;
+  &:hover {
+    cursor: pointer;
+    background-color:  #0156df;
+  }
+  &:active {
+    opacity: 0.9;
+  }
+}
+
+
+// Удаление голубой закраски при автозаполнении
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}

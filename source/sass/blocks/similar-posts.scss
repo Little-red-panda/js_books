@@ -1,0 +1,11 @@
+.similar-posts__title {
+  @include indents();
+  @include font(23px, 28px, 400);
+  font-family: 'Consolas', 'Inconsolata', monospace;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.similar-posts__slider {
+  margin-bottom: 26px;
+}

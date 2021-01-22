@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  min-width: 320px;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    max-width: 770px;
+    padding: 0 127px;
+    margin: 0 auto;
+  }
+}
+
+// font-family: 'Arimo', sans-serif; вместо Helvetica
+// font-family: 'Inconsolata', monospace; Consolas
+// font-family: 'Open Sans', sans-serif;

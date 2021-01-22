@@ -1,0 +1,52 @@
+.rating__text{
+  @include indents();
+  @include font(18px, 18px, 700);
+  font-family: 'Consolas', 'Inconsolata', monospace;
+  padding-top: 40px;
+  margin-bottom: 18px;
+}
+
+.rating__area {
+  margin-bottom: 25px;
+}
+
+.rating__area {
+	overflow: hidden;
+  width: 175px;
+  height: 25px;
+}
+
+.rating__area:not(:checked) > label {
+  position: relative;
+	float: right;
+  width: 35px;
+  height: 25px;
+	padding: 0;
+	cursor: pointer;
+}
+.rating__area:not(:checked) > label:before {
+  content: '';
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background: url("../img/icon/star.svg") repeat-x -1px 0px;
+}
+.rating__area > input:checked ~ label:before {
+	content: '';
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background: url("../img/icon/gold-star.svg") -1px 0px;
+}
+.rating__area:not(:checked) > label:hover,
+.rating__area:not(:checked) > label:hover ~ label {
+  background: url("../img/icon/gold-star.svg") no-repeat -1px 0px;
+}
+.rating__area > input:checked + label:hover,
+.rating__area > input:checked + label:hover ~ label,
+.rating__area > input:checked ~ label:hover,
+.rating__area > input:checked ~ label:hover ~ label,
+.rating__area > label:hover ~ input:checked ~ label {
+  background: url("../img/icon/star.svg") no-repeat 0px 1px;
+  background-size: 69%;
+}

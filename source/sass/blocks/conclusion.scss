@@ -8,4 +8,16 @@
 .conclusion__text {
   @include indents();
   @include font(14px, 25px, 400);
+  color: #202326;
+}
+
+@media (min-width: $desktop-width) {
+  .conclusion__title {
+    @include font(28px, 36px, 700);
+    margin-bottom: 20px;
+  }
+  
+  .conclusion__text {
+    @include font(16px, 25px, 400);
+  }
 }

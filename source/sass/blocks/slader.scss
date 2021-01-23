@@ -16,13 +16,13 @@
   @include indents();
   position: absolute;
   display: block;
-  width: 280px;
-  height: 280px;
   opacity: 0;
   z-index: 0;
 
   transition: ease-in-out .5s;
   & img {
+    display: block;
+    width: 280px;
     margin-bottom: 15px
   }
 }
@@ -84,4 +84,42 @@
 #slide3:checked ~ .slider__slides > .slider__slide-slide3 {
   opacity: 1;
   z-index: 1;
+}
+
+@media (min-width: $desktop-width) {
+  .slider {
+    // position: relative;
+    width: 770px;
+    height: auto;
+  }
+  
+  .slider__slides {
+    // overflow: hidden;
+    // position: relative;
+    width: auto;
+    height: auto;
+    // margin-bottom: 50px;
+  }
+  
+  .slider__slide {
+    position: static;
+    display: inline-block;
+    width: 221px;
+    height: 221px;
+    opacity: 1;
+    margin-right: 26px;
+
+    & img {
+      width: 210px;
+      margin-bottom: 19px
+    }
+  }
+
+  .slider input {
+    display: none;
+  }
+  
+  .slider label {
+    display: none;
+  }
 }

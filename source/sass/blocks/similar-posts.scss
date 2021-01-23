@@ -2,10 +2,23 @@
   @include indents();
   @include font(23px, 28px, 400);
   font-family: 'Consolas', 'Inconsolata', monospace;
+  color: #272522;
   margin-top: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .similar-posts__slider {
   margin-bottom: 26px;
+}
+
+@media (min-width: $desktop-width) {
+  .similar-posts__title {
+    @include font(28px, 28px, 400);
+    margin-top: 70px;
+    margin-bottom:  44px;
+  }
+  
+  .similar-posts__slider {
+    margin-bottom: 88px;
+  }
 }

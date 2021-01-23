@@ -15,3 +15,19 @@
   display: block;
   padding-bottom: 39px;
 }
+
+@media (min-width: $desktop-width) {
+  .adv {
+    background-color: $grey-bg;
+    margin-bottom: 50px;
+  }
+  
+  .adv__title {
+    margin-bottom: 20px;
+  }
+  
+  .adv__img {
+    display: block;
+    padding-bottom: 40px;
+  }
+}

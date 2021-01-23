@@ -2,9 +2,32 @@
   background-color: $grey-bg;
 }
 
+.review__rating {
+  margin-bottom: 25px;
+}
+
 .review__add-comment {
   @include indents();
   @include font(16px, 18px, 700);
   font-family: 'Consolas', 'Inconsolata', monospace;
   margin-bottom: 20px;
+}
+
+.review__form {
+  padding-bottom: 30px;
+}
+
+@media (min-width: $desktop-width) {
+  .review__rating {
+    margin-bottom: 40px;
+  }
+  
+  .review__add-comment {
+    @include font(18px, 18px, 700);
+    margin-bottom: 32px;
+  }
+
+  .review__form {
+    padding-bottom: 29px;
+  }
 }

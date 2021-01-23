@@ -3,6 +3,8 @@
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-style: italic;
   color: #1A1A1A;
+  background: url("../img/icon/quote.svg") no-repeat;
+  padding-left: 45px;
   margin-bottom: 20px;
 }
 
@@ -11,4 +13,18 @@
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-style: italic;
   color: #656565;
+}
+
+@media (min-width: $desktop-width) {
+  .quote__text {
+    @include font(18px, 26px, 400);
+    background: url("../img/icon/quote.svg") no-repeat;
+    background-size: 43px 43px;
+    padding-left: 80px;
+  }
+
+  .quote__autor {
+    @include font(18px, 26px, 400);
+    margin-bottom: 60px
+  }
 }

@@ -48,6 +48,10 @@
   margin: 0 auto 25px;
 }
 
+.books__img {
+  display: block;
+}
+
 .books__scrolling {
   overflow-x: scroll;
   overflow-y: hidden;
@@ -88,11 +92,62 @@
 
 .books__quote {
   @include indents();
-  padding-left: 45px;
-  background: url("../img/icon/quote.svg") no-repeat;
   margin-bottom: 50px;
 }
 
 .books__conclusion {
   margin-bottom: 75px;
+}
+
+@media (min-width: $desktop-width) {
+  .books__title {
+    @include font(48px, 48px, 700);
+
+    max-width: 770px;
+    padding: 0px;
+    margin: 40px auto 50px ;
+  
+    &::before {
+        width: 130px;
+        height: 2px;
+        left: 0px;
+        bottom: 6px;
+    }
+  
+    &::after {
+        width: 130px;
+        height: 2px;
+        right: 0px;
+        bottom: 6px;
+    }
+  }
+
+  .books__figure {
+    position: relative;
+    width: 770px;
+    padding: 0px;
+    margin: 0 auto 139px;
+  }
+  
+  .books__sign {
+    position: absolute;
+    bottom: -38px;
+    max-width: 770px;
+    padding: 0px;
+    margin: 0;
+  }
+  
+  .books__scrolling {
+    overflow-x: visible;
+    overflow-y: visible;
+    height: auto;
+  }
+
+  .books__subtitle {
+    @include font(28px, 36px, 700);
+  }
+  
+  .books__quote {
+    margin-bottom: 60px;
+  } 
 }

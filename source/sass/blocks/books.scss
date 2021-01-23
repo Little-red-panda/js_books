@@ -2,7 +2,7 @@
   @include indents();
   @include font(23px, 25px, 700);
   font-family: 'Consolas', 'Inconsolata', monospace;
-  color: #0062FF;
+  color: $blue;
   text-align: center;
 
   position: relative;
@@ -72,7 +72,7 @@
 }
 
 .books__scrolling::-webkit-scrollbar-thumb {
-  background-color: #0062FF;
+  background-color: $blue;
 }
 
 .books__scrolling::-webkit-scrollbar-track {

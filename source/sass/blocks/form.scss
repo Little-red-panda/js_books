@@ -86,7 +86,16 @@ input:focus {
   color: #000;
   padding-left: 25px;
   cursor: pointer;
+  position: relative;
 }
+
+// .form__select-items div::before {
+//   content: "";
+//   position: absolute;
+//   left: 0;
+//   width: 7px;
+//   height: 45px;
+// }
 
 .form__select-selected.select-active {
   color: #000;
@@ -107,8 +116,27 @@ input:focus {
   display: none;
 }
 
-.form__select-items div:hover, .form__same-as-selected {
-  background-color: #EDEDED;
+.form__select-items div:hover {
+  background: linear-gradient(to right, $blue 0%, $blue 2%, $grey 2%, $grey 100%);
+}
+// .form__select-items div::before .form__select-items div:hover {
+//   background-color: $blue
+// }
+
+.form__custom-select.no-js {
+  @include indents();
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.form__custom-select.no-js select {
+  display: block;
+  appearance: none;
+  background: #fff url("../img/icon/arrow.svg") no-repeat 246px center;
+  padding-left: 25px;
+  &:focus {
+    outline-color: #7F7F7F;
+  }
 }
 
 .form__textarea {
@@ -136,7 +164,7 @@ input:focus {
   display: block;
   width: 280px;
   height: 50px;
-  background: #0062FF;
+  background: $blue;
   border-radius: 2px;
   border: none;
   &:hover {

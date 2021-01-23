@@ -89,7 +89,7 @@
                 <input class="form__user-email" type="text" name="email" id="email" required>
                 <label for="email">E-mail</label>
               </div>
-              <div class="form__custom-select" tabindex="0">
+              <div class="form__custom-select no-js" id="custom_select">
                 <select class="form__books-select" name="books" id="books" placeholder="Выберите книгу">
                   <option class="qwe" value="0" disabled selected hidden>Выберите книгу</option>
                   <option value="1">JavaScript ниндзя</option>
@@ -120,15 +120,18 @@
           <label for="slide3"></label>
           <div  class="slider__slides">
             <figure class="slider__slide slider__slide-slide1">
-              <img src="img/content/photo1m.png" class="slider__img1">
+              <picture class="slider__img1" alt="События жизненного цикла ReactJS">
+                <source media="(min-width: 768px)" srcset="img/content/photo1.png 1x, img/content/photo1@2x.png 2x">
+                <img srcset="img/content/photo1m.png 1x, img/content/photo1m@2x.png 2x">
+              </picture>
               <figcaption class="slider__sign">События жизненного цикла ReactJS</figcaption>
             </figure>
             <figure  class="slider__slide slider__slide-slide2">
-              <img src="img/content/photo2.png">
+              <img srcset="img/content/photo2.png 1x, img/content/photo2@2x.png 2x">
               <figcaption class="slider__sign">CSS Grids. Полное руководство</figcaption>
             </figure>
             <figure  class="slider__slide slider__slide-slide3">
-              <img src="img/content/photo3.png">
+              <img srcset="img/content/photo3.png 1x, img/content/photo3@2x.png 2x">
               <figcaption class="slider__sign">Асинхронность в JavaScript </figcaption>
             </figure>
           </div>

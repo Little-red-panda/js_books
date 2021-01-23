@@ -76,7 +76,7 @@
 #slide1:checked + label::after,
 #slide2:checked + label::after,
 #slide3:checked + label::after {
-  background: #0062FF;
+  background: $blue;
 }
 
 #slide1:checked ~ .slider__slides > .slider__slide-slide1,

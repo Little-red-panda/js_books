@@ -8,7 +8,7 @@
 .form__textarea {
   box-sizing: border-box;
   @include indents();
-  @include font(14px, 50px, 400);
+  @include font(1.4rem, 5rem, 400);
   font-family: 'Arial', sans-serif;
   border: none;
   width: 100%;
@@ -17,9 +17,9 @@
 
 .form__user-name,
 .form__user-email {
-  padding-top: 15px;
-  padding-left: 15px;
-  margin-bottom: 10px;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 input:focus {
@@ -27,11 +27,11 @@ input:focus {
 }
 
 .form__input-wrapper label {
-  @include font(14px, 50px, 400);
+  @include font(1.4rem, 5rem, 400);
   font-family: 'Arial', sans-serif;
   color: #777;
   position: absolute;
-  left: 15px;
+  left: 1.5rem;
   transition: ease-in-out .3s;
 }
 
@@ -41,17 +41,17 @@ input:focus {
 .form__user-email:valid + label,
 .form__textarea:focus + label,
 .form__textarea:valid + label {
-  transform: translateY(-11px);
+  transform: translateY(-1.1rem);
 }
 
 .form__custom-select {
   box-sizing: border-box;
   position: relative;
   font-family: 'Arial', sans-serif;
-  height: 50px;
+  height: 5rem;
   background-color: #fff;
-  padding-top: 5px;
-  margin-bottom: 20px;
+  padding-top: .5rem;
+  margin-bottom: 2rem;
   &:focus {
     outline-color: #7F7F7F;
   }
@@ -62,11 +62,11 @@ input:focus {
 }
 
 .form__select-selected {
-  @include font(14px, 40px, 400);
+  @include font(1.4rem, 4rem, 400);
   font-family: 'Arial', sans-serif;
   color: #777;
   background-color: #fff;
-  padding-left: 25px;
+  padding-left: 2.5rem;
   cursor: pointer;
 }
 
@@ -76,26 +76,18 @@ input:focus {
   top: 0px;
   right: 0px;
   width: 60px;
-  height: 50px;
+  height: 5rem;
   background: url("../img/icon/arrow.svg") no-repeat center center;
 }
 
 .form__select-items div{
-  @include font(14px, 40px, 400);
+  @include font(1.4rem, 4rem, 400);
   font-family: 'Arial', sans-serif;
   color: #000;
-  padding-left: 25px;
+  padding-left: 2.5rem;
   cursor: pointer;
   position: relative;
 }
-
-// .form__select-items div::before {
-//   content: "";
-//   position: absolute;
-//   left: 0;
-//   width: 7px;
-//   height: 45px;
-// }
 
 .form__select-selected.select-active {
   color: #000;
@@ -108,7 +100,7 @@ input:focus {
   top: 60px;
   left: 0;
   right: 0;
-  z-index: 99;
+  z-index: 10;
   box-shadow: 0 0 10px 0px #cecece;
 }
 
@@ -119,21 +111,18 @@ input:focus {
 .form__select-items div:hover {
   background: linear-gradient(to right, $blue 0%, $blue 2%, $grey 2%, $grey 100%);
 }
-// .form__select-items div::before .form__select-items div:hover {
-//   background-color: $blue
-// }
 
 .form__custom-select.no-js {
   @include indents();
   height: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .form__custom-select.no-js select {
   display: block;
   appearance: none;
   background: #fff url("../img/icon/arrow.svg") no-repeat 246px center;
-  padding-left: 25px;
+  padding-left: 2.5rem;
   &:focus {
     outline-color: #7F7F7F;
   }
@@ -141,31 +130,31 @@ input:focus {
 
 .form__textarea {
   display: block;
-  height: 150px;
+  height: 15rem;
   resize: none;
-  padding-top: 5px;
-  padding-left: 15px;
-  margin-bottom: 20px;
+  padding-top: .5rem;
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
   &:focus {
     outline-color: #7F7F7F;
   }
 }
 
 .form__textarea + label {
-  top: -3px;
+  top: -.3rem;
 }
 
 .form__btn {
   @include indents();
-  @include font(14px, 50px, 700);
+  @include font(1.4rem, 5rem, 700);
   font-family: 'Arial', sans-serif;
   color: #fff;
   text-transform: uppercase;
   display: block;
   width: 280px;
-  height: 50px;
+  height: 5rem;
   background: $blue;
-  border-radius: 2px;
+  border-radius: .2rem;
   border: none;
   &:hover {
     cursor: pointer;
@@ -189,13 +178,13 @@ input:-webkit-autofill:active  {
   .form__wrapper {
     @include indents();
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
   }
   
   .form__user-name,
   .form__user-email {
     width: 210px;
-    margin-right: 30px;
+    margin-right: 3rem;
   }
   
   .form__custom-select {
@@ -203,8 +192,8 @@ input:-webkit-autofill:active  {
   }
   
   .form__textarea {
-    height: 120px;
-    margin-bottom: 30px;
+    height: 12rem;
+    margin-bottom: 3rem;
   }
   
   .form__btn {

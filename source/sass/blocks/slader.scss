@@ -1,15 +1,15 @@
 .slider {
   position: relative;
   width: 280px;
-  height: 460px;
+  height: 46rem;
 }
 
 .slider__slides {
   overflow: hidden;
   position: relative;
   width: 280px;
-  height: 348px;
-  margin-bottom: 50px;
+  height: 34.8rem;
+  margin-bottom: 5rem;
 }
 
 .slider__slide {
@@ -23,13 +23,13 @@
   & img {
     display: block;
     width: 280px;
-    margin-bottom: 15px
+    margin-bottom: 1.5rem;
   }
 }
 
 .slider__sign {
   @include indents();
-  @include font(18px, 24px, 700);
+  @include font(1.8rem, 2.4rem, 700);
   font-family: 'Consolas', 'Inconsolata', monospace;
   color: #272522;
   width: 208px;
@@ -88,17 +88,13 @@
 
 @media (min-width: $desktop-width) {
   .slider {
-    // position: relative;
     width: 770px;
     height: auto;
   }
   
   .slider__slides {
-    // overflow: hidden;
-    // position: relative;
     width: auto;
     height: auto;
-    // margin-bottom: 50px;
   }
   
   .slider__slide {
@@ -111,7 +107,7 @@
 
     & img {
       width: 210px;
-      margin-bottom: 19px
+      margin-bottom: 1.9rem;
     }
   }
 

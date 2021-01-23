@@ -1,33 +1,33 @@
 .adv {
-  background-color: $grey-bg;
-  margin-bottom: 50px;
+  background-color: $grey;
+  margin-bottom: 5rem;
 }
 
 .adv__title {
   @include indents();
-  @include font(14px, 18px, 400);
+  @include font(1.4rem, 1.8rem, 400);
   font-family: 'Helvetica', 'Arimo', sans-serif;
-  padding-top: 40px;
-  margin-bottom: 21px;
+  padding-top: 4rem;
+  margin-bottom: 2.1rem;
 }
 
 .adv__img {
   display: block;
-  padding-bottom: 39px;
+  padding-bottom: 3.9rem;
 }
 
 @media (min-width: $desktop-width) {
   .adv {
-    background-color: $grey-bg;
-    margin-bottom: 50px;
+    background-color: $grey;
+    margin-bottom: 5rem;
   }
   
   .adv__title {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
   }
   
   .adv__img {
     display: block;
-    padding-bottom: 40px;
+    padding-bottom: 4rem;
   }
 }

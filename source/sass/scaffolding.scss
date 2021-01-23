@@ -1,5 +1,9 @@
+html {
+  font-size: 10px;
+}
 body {
   font-family: Arial, sans-serif;
+  font-size: 1.6rem;
   min-width: 320px;
 }
 
@@ -23,11 +27,15 @@ input[type="radio"].visually-hidden {
 
 .container {
   max-width: 280px;
-  padding: 0 20px;
+  padding: 0 2rem;
   margin: 0 auto;
 }
 
 @media (min-width: $desktop-width) {
+  html {
+    font-size: 10px;
+  }
+
   .container {
     max-width: 770px;
     padding: 0;

@@ -1,0 +1,210 @@
+.books__title {
+  @include indents();
+  @include font(2.3rem, 2.5rem, 700);
+  font-family: 'Consolas', 'Inconsolata', monospace;
+  color: $blue;
+  text-align: center;
+
+  position: relative;
+  max-width: 280px;
+
+  padding: 0 2rem;
+  margin: 4rem auto;
+
+  &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 1px;
+      left: 20px;
+      bottom: 6px;
+      background-color:  #DCDCDC;
+  }
+
+  &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 1px;
+      right: 20px;
+      bottom: 6px;
+      background-color:  #DCDCDC;
+  }
+}
+
+.books__figure {
+  @include indents();
+  padding-left: 2rem;
+  margin: 0 auto 5rem;
+}
+
+.books__sign {
+  @include indents();
+  @include font(1.4rem, 1.8rem, 400);
+  font-style: italic;
+  color: #202326;
+  max-width: 280px;
+  padding-right: 2rem;
+  margin: 0 auto 2.5rem;
+}
+
+.books__scrolling {
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 340px;
+}
+
+.books__scrolling::-webkit-scrollbar {
+  height: 0.4rem;
+  margin: 0 auto;
+}
+
+.books__scrolling::-webkit-scrollbar-thumb,
+.books__scrolling::-webkit-scrollbar-track {
+  border-bottom-right-radius: .2rem;
+  border-bottom-left-radius: .2rem;
+  border-top-left-radius: .2rem;
+  border-top-right-radius: .2rem;
+}
+
+.books__scrolling::-webkit-scrollbar-thumb {
+  background-color: $blue;
+}
+
+.books__scrolling::-webkit-scrollbar-track {
+  background-color: #E6E6E6;
+  margin-right: 2rem;
+}
+
+.books__img {
+  display: block;
+}
+
+.books__img-sticker {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 22px;
+  left: 22px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.books__img-date {
+  @include indents();
+  @include font(30px, 35px, 400);
+  font-family: 'Consolas', 'Inconsolata', monospace;
+  color: #1A1A1A;
+  text-align: center;
+  display: block;
+  padding-top: 23px;
+  padding-right: 11px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: 37px;
+    left: 67px;
+    border: 5px solid transparent;
+    border-bottom-color: #1a1a1a;
+    border-top: 0;
+    transform: rotate(90deg);
+  }
+}
+
+.books__img-month {
+  @include indents();
+  @include font(18px, 21px, 700);
+  font-family: 'Consolas', 'Inconsolata', monospace;
+  color: #1A1A1A;
+  text-align: center;
+  display: block;
+}
+
+.books__img-arrow {
+  display: none;
+}
+
+.books__quote {
+  margin-bottom: 5rem;
+}
+
+.books__conclusion {
+  margin-bottom: 7.5rem;
+}
+
+@media (min-width: $desktop-width) {
+  .books__title {
+    @include font(4.8rem, 4.8rem, 700);
+    max-width: 770px;
+    padding: 0;
+    margin: 4rem auto 5rem;
+  
+    &::before {
+        width: 130px;
+        height: 2px;
+        left: 0px;
+        bottom: 6px;
+    }
+  
+    &::after {
+        width: 130px;
+        height: 2px;
+        right: 0px;
+        bottom: 6px;
+    }
+  }
+
+  .books__figure {
+    position: relative;
+    width: 770px;
+    padding: 0px;
+    margin: 0 auto 13.9rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 770px;
+      height: 1px;
+      bottom: -88px;
+      background-color: #DCDCDC;
+    }
+  }
+  
+  .books__sign {
+    position: absolute;
+    bottom: -38px;
+    max-width: 770px;
+    padding: 0px;
+    margin: 0;
+  }
+  
+  .books__scrolling {
+    overflow-x: visible;
+    overflow-y: visible;
+    height: auto;
+  }
+
+  .books__img {
+    width: 770px;
+  }
+
+  .books__img-arrow {
+    position: absolute;
+    display: block;
+    width: 0px;
+    height: 0px;
+    bottom: 0;
+    left: 73px;
+    border: 20px solid transparent;
+    border-bottom-color: #fff;
+    border-top: 0;
+  
+  }
+
+  .books__quote {
+    margin-bottom: 6rem;
+  } 
+}

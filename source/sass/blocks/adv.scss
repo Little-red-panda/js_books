@@ -1,0 +1,33 @@
+.adv {
+  background-color: $grey;
+  margin-bottom: 5rem;
+}
+
+.adv__title {
+  @include indents();
+  @include font(1.4rem, 1.8rem, 400);
+  font-family: 'Helvetica', 'Arimo', sans-serif;
+  padding-top: 4rem;
+  margin-bottom: 2.1rem;
+}
+
+.adv__img {
+  display: block;
+  padding-bottom: 3.9rem;
+}
+
+@media (min-width: $desktop-width) {
+  .adv {
+    background-color: $grey;
+    margin-bottom: 5rem;
+  }
+  
+  .adv__title {
+    margin-bottom: 2rem;
+  }
+  
+  .adv__img {
+    display: block;
+    padding-bottom: 4rem;
+  }
+}

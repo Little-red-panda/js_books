@@ -1,0 +1,33 @@
+.review {
+  background-color: $grey;
+}
+
+.review__rating {
+  margin-bottom: 2.5rem;
+}
+
+.review__add-comment {
+  @include indents();
+  @include font(1.6rem, 1.8rem, 700);
+  font-family: 'Consolas', 'Inconsolata', monospace;
+  margin-bottom: 2rem;
+}
+
+.review__form {
+  padding-bottom: 3rem;
+}
+
+@media (min-width: $desktop-width) {
+  .review__rating {
+    margin-bottom: 4rem;
+  }
+  
+  .review__add-comment {
+    @include font(1.8rem, 1.8rem, 700);
+    margin-bottom: 3.2rem;
+  }
+
+  .review__form {
+    padding-bottom: 2.9rem;
+  }
+}

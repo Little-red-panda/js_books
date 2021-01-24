@@ -1,0 +1,23 @@
+.conclusion__title {
+  @include indents();
+  @include font(2.3rem, 3.6rem, 700);
+  font-family: 'Consolas', 'Inconsolata', monospace;
+  margin-bottom: 21px;
+}
+
+.conclusion__text {
+  @include indents();
+  @include font(1.4rem, 2.5rem, 400);
+  color: #202326;
+}
+
+@media (min-width: $desktop-width) {
+  .conclusion__title {
+    @include font(2.8rem, 3.6rem, 700);
+    margin-bottom: 2rem;
+  }
+  
+  .conclusion__text {
+    @include font(1.6rem, 2.5rem, 400);
+  }
+}

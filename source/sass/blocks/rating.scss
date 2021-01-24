@@ -17,8 +17,8 @@
 	float: right;
   width: 35px;
   height: 25px;
-	padding: 0;
 	cursor: pointer;
+	padding: 0;
 }
 .rating__area:not(:checked) > label:before {
   content: '';

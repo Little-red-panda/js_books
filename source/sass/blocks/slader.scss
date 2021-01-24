@@ -52,8 +52,8 @@
     margin-left: 100px;
   }
   &::after {
-    position: absolute;
     content: " ";
+    position: absolute;
     display: block;
     width: 20px;
     height: 20px;
@@ -110,7 +110,7 @@
       margin-bottom: 1.9rem;
     }
   }
-
+  
   .slider input {
     display: none;
   }

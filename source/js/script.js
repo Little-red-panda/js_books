@@ -62,3 +62,8 @@ function closeAllSelect(elmnt) {
 }
 
 document.addEventListener("click", closeAllSelect);
+
+$(function()
+{
+	$('.scroll-pane').jScrollPane();
+});

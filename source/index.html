@@ -7,7 +7,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Inconsolata:wght@400;700&family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Inconsolata:wght@400;700&family=Open+Sans:ital@1&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
@@ -20,9 +20,16 @@
           <figcaption class="books__sign">
             Можно выделить три основных направления для прогресса JavaScript
           </figcaption>
-          <div class="books__scrolling">
-            <span class="books__img-sticker"><span class="books__img-date">12</span><span class="books__img-month">Апреля</span></span>
-            <img srcset="img/content/books.jpg 1x, img/content/books@2x.jpg 2x" alt="Изображение с книгами" class="books__img">
+          <div class="books__scrolling scroll-pane">
+            <span class="books__img-sticker">
+              <span class="books__img-date">12</span>
+              <span class="books__img-month">Апреля</span>
+            </span>
+            <img srcset="img/content/books.jpg 1x, img/content/books@2x.jpg 2x"
+             src="img/content/books.jpg"
+             alt="Изображение с книгами" class="books__img"
+            >
+            <span class="books__img-arrow"></span>
           </div> 
         </figure>
       </div>
@@ -43,8 +50,8 @@
         <div class="container">
           <h2 class="adv__title">Реклама на <a href="#">blabla.com</a></h2>
           <picture class="adv__img" alt="Рекламный баннер с книгами">
-            <source media="(min-width: 770px)" srcset="img/content/banner-desk.jpg 1x, img/content/banner-desk@2x.jpg 2x">
-            <img srcset="img/content/banner-mob.jpg 1x, img/content/banner-mob@2x.jpg 2x">
+            <source media="(min-width: 770px)" srcset="img/content/banner-desk.jpg 1x, img/content/banner-desk@2x.jpg 2x" src="img/content/banner-desk.jpg">
+            <img srcset="img/content/banner-mob.jpg 1x, img/content/banner-mob@2x.jpg 2x" src="img/content/banner-desk.jpg">
           </picture>
         </div>
       </article>
@@ -122,17 +129,17 @@
           <div  class="slider__slides">
             <figure class="slider__slide slider__slide-slide1">
               <picture class="slider__img1" alt="События жизненного цикла ReactJS">
-                <source media="(min-width: 770px)" srcset="img/content/photo1.png 1x, img/content/photo1@2x.png 2x">
-                <img srcset="img/content/photo1m.png 1x, img/content/photo1m@2x.png 2x">
+                <source media="(min-width: 770px)" srcset="img/content/photo1.png 1x, img/content/photo1@2x.png 2x" src="img/content/photo1.png">
+                <img srcset="img/content/photo1m.png 1x, img/content/photo1m@2x.png 2x" src="img/content/photo1m.png">
               </picture>
               <figcaption class="slider__sign">События жизненного цикла ReactJS</figcaption>
             </figure>
             <figure  class="slider__slide slider__slide-slide2">
-              <img srcset="img/content/photo2.png 1x, img/content/photo2@2x.png 2x">
+              <img srcset="img/content/photo2.png 1x, img/content/photo2@2x.png 2x" src="img/content/photo2.png">
               <figcaption class="slider__sign">CSS Grids. Полное руководство</figcaption>
             </figure>
             <figure  class="slider__slide slider__slide-slide3">
-              <img srcset="img/content/photo3.png 1x, img/content/photo3@2x.png 2x">
+              <img srcset="img/content/photo3.png 1x, img/content/photo3@2x.png 2x" src="img/content/photo3.png">
               <figcaption class="slider__sign">Асинхронность в JavaScript </figcaption>
             </figure>
           </div>
@@ -141,6 +148,8 @@
     </section>
   </main>
   <script src="js/script.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery.jscrollpane.min.js"></script> -->
 </body>
 
 

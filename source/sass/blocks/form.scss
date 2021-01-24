@@ -71,12 +71,12 @@ input:focus {
 }
 
 .form__select-selected:after {
-  position: absolute;
   content: "";
-  top: 0px;
-  right: 0px;
+  position: absolute;
   width: 60px;
   height: 5rem;
+  top: 0px;
+  right: 0px;
   background: url("../img/icon/arrow.svg") no-repeat center center;
 }
 
@@ -84,9 +84,9 @@ input:focus {
   @include font(1.4rem, 4rem, 400);
   font-family: 'Arial', sans-serif;
   color: #000;
-  padding-left: 2.5rem;
-  cursor: pointer;
   position: relative;
+  cursor: pointer;
+  padding-left: 2.5rem;
 }
 
 .form__select-selected.select-active {
@@ -95,12 +95,12 @@ input:focus {
 
 .form__select-items {
   position: absolute;
-  background-color: #fff;
   color: #000;
   top: 60px;
   left: 0;
   right: 0;
   z-index: 10;
+  background-color: #fff;
   box-shadow: 0 0 10px 0px #cecece;
 }
 
@@ -109,7 +109,7 @@ input:focus {
 }
 
 .form__select-items div:hover {
-  background: linear-gradient(to right, $blue 0%, $blue 2%, $grey 2%, $grey 100%);
+  background: linear-gradient(to right, $blue 0%, $blue 7px, $grey 7px, $grey 100%);
 }
 
 .form__custom-select.no-js {

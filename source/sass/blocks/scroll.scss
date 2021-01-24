@@ -1,0 +1,80 @@
+// .jspContainer {
+// 	overflow: hidden;
+//   position: relative;
+// }
+
+// .jspPane {
+// 	position: absolute;
+// }
+
+// .jspHorizontalBar {
+//   position: absolute;
+// 	background: #E6E6E6;
+// 	bottom: 20px;
+// 	height: 4px;
+// 	left: 50%;
+// 	position: absolute;
+//   width: 280px;
+//   transform: translateX(-53%);
+// }
+
+// .jspCap {
+// 	display: none;
+// }
+
+// .jspHorizontalBar .jspCap {
+// 	float: left;
+// }
+
+// .jspTrack {
+// 	background: #E6E6E6;
+//   position: relative;
+// }
+
+// .jspDrag {
+// 	background: $blue;
+// 	cursor: pointer;
+// 	left: 0px;
+// 	position: relative;
+//   top: 0;
+//   width: 30px;
+// }
+
+// .jspHorizontalBar,
+// .jspTrack,
+// .jspDrag {
+//   border-bottom-right-radius: 2px;
+//   border-bottom-left-radius: 2px;
+//   border-top-left-radius: 2px;
+//   border-top-right-radius: 2px;
+// }
+
+
+// .jspHorizontalBar .jspTrack,
+// .jspHorizontalBar .jspDrag {
+// 	float: left;
+// 	height: 100%;
+// }
+
+
+// .jspDisabled {
+// 	background: #80808d;
+// 	cursor: default;
+// }
+
+// .jspHorizontalBar .jspArrow {
+// 	float: left;
+// 	height: 100%;
+// 	width: 4px;
+// }
+
+// .jspCorner {
+// 	background: #eeeef4;
+// 	float: left;
+// 	height: 100%;
+// }
+
+// /* Yuk! CSS Hack for IE6 3 pixel bug :( */
+// * html .jspCorner {
+// 	margin: 0 -3px 0 0;
+// }

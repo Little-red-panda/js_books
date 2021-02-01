@@ -1,6 +1,6 @@
-var customSelect, i, j, selectElmnt, selectedElmnt, itemsElmnt, optionsElmnt;
+let customSelect, i, j, selectElmnt, selectedElmnt, itemsElmnt, optionsElmnt;
 customSelect = document.getElementsByClassName("form__custom-select");
-var divCustomSel = document.getElementById("custom_select");
+let divCustomSel = document.getElementById("custom_select");
 divCustomSel.classList.remove("no-js");
 divCustomSel.setAttribute("tabindex", "0");
 for (i = 0; i < customSelect.length; i++) {
@@ -16,7 +16,7 @@ for (i = 0; i < customSelect.length; i++) {
     optionsElmnt.innerHTML = selectElmnt.options[j].innerHTML;
     optionsElmnt.addEventListener("click", function(e) {
       console.log('a')
-        var sameSelected, i, k, select, newSelected;
+        let sameSelected, i, k, select, newSelected;
         select = this.parentNode.parentNode.getElementsByTagName("select")[0];
         newSelected = this.parentNode.previousSibling;
         for (i = 0; i < select.length; i++) {
@@ -46,7 +46,7 @@ for (i = 0; i < customSelect.length; i++) {
 }
 
 function closeAllSelect(elmnt) {
-  var items, selected, i, arrNo = [];
+  let items, selected, i, arrNo = [];
   items = document.getElementsByClassName("form__select-items");
   selected = document.getElementsByClassName("form__select-selected");
   for (i = 0; i < selected.length; i++) {

@@ -20,6 +20,11 @@
   z-index: 0;
 
   transition: ease-in-out .5s;
+  & a {
+    display: block;
+    text-decoration: none;
+  }
+
   & img {
     display: block;
     width: 280px;

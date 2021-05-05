@@ -15,7 +15,6 @@ for (i = 0; i < customSelect.length; i++) {
     optionsElmnt = document.createElement("DIV");
     optionsElmnt.innerHTML = selectElmnt.options[j].innerHTML;
     optionsElmnt.addEventListener("click", function(e) {
-      console.log('a')
         let sameSelected, i, k, select, newSelected;
         select = this.parentNode.parentNode.getElementsByTagName("select")[0];
         newSelected = this.parentNode.previousSibling;
@@ -38,7 +37,6 @@ for (i = 0; i < customSelect.length; i++) {
   }
   customSelect[i].appendChild(itemsElmnt);
   selectedElmnt.addEventListener("click", function(e) {
-    console.log('s')
     e.stopPropagation();
     closeAllSelect(this);
     this.nextSibling.classList.toggle("form__select-hide");
@@ -63,7 +61,7 @@ function closeAllSelect(elmnt) {
 
 document.addEventListener("click", closeAllSelect);
 
-$(function()
-{
-	$('.scroll-pane').jScrollPane();
-});
+// $(function()
+// {
+// 	$('.scroll-pane').jScrollPane();
+// });

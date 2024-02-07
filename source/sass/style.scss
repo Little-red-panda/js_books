@@ -1,6 +1,6 @@
-@import "variables.scss";
-@import "scaffolding.scss";
-@import "normalize.scss";
+@import "base/normalize.scss";
+@import "base/variables.scss";
+@import "base/scaffolding.scss";
 @import "blocks/books.scss";
 @import "blocks/quote.scss";
 @import "blocks/adv.scss";
